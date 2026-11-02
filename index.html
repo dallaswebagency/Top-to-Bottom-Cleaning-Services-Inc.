@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top to Bottom Cleaning Services | Residential &amp; Commercial Cleaning</title>
+<meta name="description" content="Top to Bottom Professional Cleaning Services. Residential and commercial cleaning with eco-friendly products, trained staff and a satisfaction guarantee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Figtree:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF7EA;
+  --paper:#FFFFFF;
+  --green:#2E8B3A;
+  --forest:#154A22;
+  --deep:#0E3319;
+  --sun:#F2C230;
+  --sun-soft:#FBE9A6;
+  --red:#D8342B;
+  --blue:#2F4FB5;
+  --ink:#16261A;
+  --muted:#53635A;
+  --line:rgba(22,38,26,.14);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --script:'Yellowtail','Brush Script MT',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+.eyebrow{font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green)}
+h1,h2,h3{font-family:var(--serif);line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,4.2vw,3.4rem);font-weight:800}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:700;font-size:.98rem;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-sun{background:var(--sun);color:var(--deep);box-shadow:0 6px 0 #C79A10}
+.btn-sun:hover{box-shadow:0 8px 0 #C79A10}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 6px 0 var(--forest)}
+.btn-line{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+
+/* progress rail: top to bottom */
+.rail{position:fixed;left:18px;top:50%;transform:translateY(-50%);height:min(62vh,520px);width:44px;z-index:40;display:none;flex-direction:column;align-items:center;justify-content:space-between;pointer-events:none}
+.rail span{font-size:.62rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;writing-mode:vertical-rl;color:var(--forest);background:var(--cream);padding:.5rem 0;border-radius:4px}
+.rail .track{position:absolute;top:56px;bottom:56px;width:2px;background:var(--line);left:50%;transform:translateX(-50%)}
+.rail .dot{position:absolute;left:50%;width:14px;height:14px;border-radius:50%;background:var(--sun);border:3px solid var(--forest);transform:translate(-50%,0);top:56px;transition:top .12s linear}
+@media(min-width:1320px){.rail{display:flex}}
+
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:.55rem 0}
+.nav .logo img{height:64px;width:auto}
+.menu{display:flex;gap:2rem;font-weight:600;font-size:.97rem}
+.menu a{position:relative;padding:.3rem 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--sun);transition:width .25s}
+.menu a:hover::after{width:100%}
+.nav-r{display:flex;align-items:center;gap:1.2rem}
+.tel{font-weight:700;color:var(--forest);display:flex;align-items:center;gap:.5rem}
+.tel svg{width:18px;height:18px;fill:var(--green)}
+.burger{display:none;width:44px;height:44px;border-radius:12px;background:var(--forest);color:#fff;font-size:1.3rem}
+@media(max-width:960px){
+  .menu{position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;gap:0;padding:.5rem 24px 1rem;border-bottom:1px solid var(--line);display:none}
+  .menu.open{display:flex}
+  .menu a{padding:.8rem 0;border-bottom:1px solid var(--line)}
+  .burger{display:block}
+  .tel span{display:none}
+  .nav-r .btn{display:none}
+}
+
+/* hero */
+.hero{background:var(--forest);color:#fff;position:relative;overflow:hidden;padding:clamp(3rem,6vw,5.5rem) 0 clamp(7rem,10vw,9rem)}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 85% 10%,rgba(242,194,48,.22),transparent 38%),
+  radial-gradient(circle at 5% 100%,rgba(46,139,58,.55),transparent 45%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.hero .eyebrow{color:var(--sun)}
+.hero h1{font-size:clamp(2.4rem,5.2vw,4.4rem);font-weight:800;margin:1rem 0 1.4rem}
+.hero h1 em{display:block;font-family:var(--script);font-style:normal;font-weight:400;color:var(--sun);font-size:1.35em;line-height:.95;letter-spacing:0;margin-bottom:.1em}
+.hero p.lead{font-size:1.15rem;max-width:34rem;color:rgba(255,255,255,.86)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.proof{display:flex;gap:2.2rem;margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.2)}
+.proof b{display:block;font-family:var(--serif);font-size:2.4rem;line-height:1;color:var(--sun)}
+.proof small{font-size:.82rem;letter-spacing:.06em;color:rgba(255,255,255,.75)}
+.house{position:relative;aspect-ratio:1/1.02;max-width:520px;margin-left:auto;width:100%}
+.house .back,.house .front{position:absolute;inset:0;clip-path:polygon(50% 0,100% 27%,100% 100%,0 100%,0 27%)}
+.house .back{background:var(--sun);transform:translate(16px,16px)}
+.house .front{background:#000}
+.house .front img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.house .window{position:absolute;left:50%;top:9%;width:15%;aspect-ratio:1;transform:translateX(-50%);background:var(--cream);border-radius:3px;z-index:2;display:grid;grid-template:1fr 1fr/1fr 1fr;gap:3px;padding:3px}
+.house .window i{background:#cfe3f5}
+.sticker{position:absolute;z-index:3;left:-8%;bottom:8%;background:var(--cream);color:var(--ink);border-radius:18px;padding:.9rem 1.2rem;box-shadow:0 18px 40px rgba(0,0,0,.28);transform:rotate(-4deg);display:flex;align-items:center;gap:.8rem}
+.sticker b{font-family:var(--serif);font-size:2.2rem;line-height:1;color:var(--green)}
+.sticker small{font-weight:700;font-size:.78rem;line-height:1.2;display:block;color:var(--muted)}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .house{max-width:380px;margin:1rem auto 0}
+  .sticker{left:0}
+}
+
+/* booking panel overlapping hero */
+.book{position:relative;z-index:5;margin-top:-5.2rem}
+.book-card{background:var(--paper);border-radius:28px;padding:1.6rem 1.8rem;box-shadow:0 30px 70px rgba(14,51,25,.22);display:grid;grid-template-columns:auto 1fr auto;gap:1.8rem;align-items:center;border:1px solid var(--line)}
+.book-card h3{font-size:1.5rem}
+.book-card h3 small{display:block;font-family:var(--sans);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:.35rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chip{padding:.7rem 1.15rem;border-radius:14px;border:2px solid var(--line);font-weight:600;font-size:.94rem;background:var(--cream);transition:.2s}
+.chip:hover{border-color:var(--green)}
+.chip.on{background:var(--forest);color:#fff;border-color:var(--forest)}
+@media(max-width:900px){.book-card{grid-template-columns:1fr;gap:1.1rem}.book-card .btn{justify-content:center}}
+
+/* about */
+.about{padding:clamp(4.5rem,8vw,7.5rem) 0 clamp(3rem,6vw,5rem)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,5.5rem);align-items:center}
+.collage{position:relative}
+.collage .main{border-radius:6px 90px 6px 90px;overflow:hidden;aspect-ratio:4/4.3;box-shadow:0 24px 50px rgba(14,51,25,.18)}
+.collage .main img{width:100%;height:100%;object-fit:cover}
+.collage .tag{position:absolute;right:-14px;top:22px;background:var(--red);color:#fff;font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:.6rem 1rem;border-radius:8px;transform:rotate(5deg);box-shadow:0 8px 0 rgba(0,0,0,.12)}
+.about h2{margin:.9rem 0 1.2rem}
+.about p{color:var(--muted);max-width:38rem}
+.ticks{list-style:none;margin:1.8rem 0 2rem;display:grid;gap:.8rem}
+.ticks li{display:flex;gap:.9rem;align-items:flex-start;font-weight:600}
+.ticks li::before{content:"";flex:none;width:26px;height:26px;margin-top:2px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/16px no-repeat}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}.collage{max-width:460px}}
+
+/* services: room list with live image */
+.services{padding:clamp(3rem,6vw,5rem) 0 clamp(4.5rem,8vw,7rem);background:var(--paper);border-block:1px solid var(--line)}
+.sv-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.sv-head p{max-width:30rem;color:var(--muted)}
+.sv-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.sv-list{list-style:none;border-top:2px solid var(--ink)}
+.sv-list li{border-bottom:1px solid var(--line)}
+.sv-item{width:100%;text-align:left;display:grid;grid-template-columns:3rem 1fr auto;gap:1rem;align-items:baseline;padding:1.05rem .3rem;transition:padding .25s,color .2s}
+.sv-item .n{font-weight:700;font-size:.82rem;color:var(--muted);letter-spacing:.1em}
+.sv-item .t{font-family:var(--serif);font-weight:700;font-size:clamp(1.25rem,2.3vw,1.85rem);letter-spacing:-.015em}
+.sv-item .arr{font-size:1.4rem;opacity:0;transform:translateX(-8px);transition:.25s;color:var(--green)}
+.sv-item:hover,.sv-item.on{padding-left:1.1rem;color:var(--green)}
+.sv-item.on .arr,.sv-item:hover .arr{opacity:1;transform:none}
+.sv-item .d{grid-column:2/3;font-size:.95rem;color:var(--muted);max-height:0;overflow:hidden;transition:max-height .35s,margin .35s;font-family:var(--sans);font-weight:500;letter-spacing:0}
+.sv-item.on .d{max-height:5em;margin-top:.25rem}
+.sv-view{position:sticky;top:110px}
+.sv-frame{position:relative;aspect-ratio:4/4.6;border-radius:30px;overflow:hidden;background:var(--forest);transform:rotate(1.6deg);box-shadow:14px 14px 0 var(--sun)}
+.sv-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
+.sv-frame img.on{opacity:1}
+.sv-cap{margin-top:2.2rem;font-family:var(--script);font-size:2rem;color:var(--forest);text-align:center}
+.eco{margin-top:2.2rem;display:flex;gap:1rem;align-items:center;background:var(--sun-soft);border-radius:18px;padding:1rem 1.3rem;font-weight:600}
+.eco b{font-family:var(--serif);font-size:1.15rem}
+@media(max-width:900px){.sv-grid{grid-template-columns:1fr}.sv-view{position:static;order:-1;max-width:420px;margin:0 auto 2rem}}
+
+/* how it works: staircase path */
+.how{padding:clamp(4.5rem,8vw,7rem) 0;background:var(--cream)}
+.how h2{max-width:20ch;margin:.8rem 0 3.2rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;align-items:end}
+.step{position:relative;background:var(--paper);border:2px solid var(--ink);border-radius:20px;padding:1.6rem 1.5rem 1.8rem;box-shadow:7px 7px 0 var(--ink)}
+.step:nth-child(1){margin-bottom:5rem}
+.step:nth-child(2){margin-bottom:2.5rem}
+.step .num{font-family:var(--serif);font-weight:800;font-size:3.6rem;line-height:1;color:var(--sun);-webkit-text-stroke:2px var(--ink)}
+.step h3{font-size:1.4rem;margin:.6rem 0 .5rem}
+.step p{color:var(--muted);font-size:.98rem}
+.help{margin-top:3.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.help div{padding:1.5rem 1.6rem 0 0}
+.help div+div{padding-left:1.6rem;border-left:1px solid var(--line)}
+.help b{font-family:var(--serif);font-size:1.25rem;display:block;margin-bottom:.3rem}
+.help span{color:var(--muted);font-size:.96rem}
+@media(max-width:860px){.steps{grid-template-columns:1fr}.step:nth-child(n){margin-bottom:0}.help{grid-template-columns:1fr}.help div+div{border-left:0;border-top:1px solid var(--line);padding-left:0;margin-top:1rem}}
+
+/* pricing: stair steps */
+.pricing{background:var(--forest);color:#fff;padding:clamp(4.5rem,8vw,7rem) 0 0;position:relative;overflow:hidden}
+.pricing .eyebrow{color:var(--sun)}
+.pr-head{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:end}
+.pr-head p{max-width:27rem;color:rgba(255,255,255,.8)}
+.stairs{display:grid;grid-template-columns:repeat(3,1fr);align-items:end;margin-top:3.5rem}
+.stair{position:relative;padding:2rem 1.8rem 2.4rem;color:var(--ink)}
+.stair:nth-child(1){background:#E9F3E6;min-height:420px}
+.stair:nth-child(2){background:#FBE9A6;min-height:500px}
+.stair:nth-child(3){background:var(--sun);min-height:580px}
+.stair .tier{font-weight:800;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--forest)}
+.stair .amt{font-family:var(--serif);font-weight:800;font-size:clamp(3.2rem,6vw,5rem);line-height:1;margin:.7rem 0 .2rem;letter-spacing:-.04em}
+.stair .amt sup{font-size:.4em;vertical-align:top;position:relative;top:.35em;margin-right:.1em}
+.stair .from{font-size:.82rem;font-weight:700;color:var(--forest);letter-spacing:.06em}
+.stair ul{list-style:none;margin:1.5rem 0 2rem;display:grid;gap:.55rem;font-size:.98rem}
+.stair li{padding-left:1.4rem;position:relative}
+.stair li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:2px;background:var(--forest);transform:rotate(45deg)}
+.stair .btn{background:var(--forest);color:#fff}
+.stair.alt .btn{background:var(--deep)}
+.pr-note{background:var(--deep);padding:1.2rem 0;text-align:center;font-size:.95rem;color:rgba(255,255,255,.82)}
+@media(max-width:860px){.stairs{grid-template-columns:1fr;gap:0}.stair:nth-child(n){min-height:0}}
+
+/* experience */
+.exp{padding:clamp(4.5rem,8vw,7rem) 0;position:relative;overflow:hidden}
+.exp-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.big15{font-family:var(--serif);font-weight:800;font-size:clamp(9rem,22vw,16rem);line-height:.8;letter-spacing:-.06em;color:var(--green);position:relative}
+.big15 small{display:block;margin-top:1.4rem;font-family:var(--script);font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1;letter-spacing:0;color:var(--red);transform:rotate(-4deg);transform-origin:left center}
+.exp h2{margin-bottom:1.2rem;max-width:18ch}
+.exp p{color:var(--muted);max-width:34rem}
+.exp .nums{display:flex;gap:2.4rem;margin-top:2rem}
+.exp .nums b{display:block;font-family:var(--serif);font-size:2.6rem;line-height:1}
+.exp .nums span{font-size:.88rem;color:var(--muted);font-weight:600}
+@media(max-width:860px){.exp-grid{grid-template-columns:1fr}}
+
+/* gallery */
+.gal{padding:0 0 clamp(4.5rem,8vw,7rem)}
+.gal-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:2rem;flex-wrap:wrap;gap:1rem}
+.mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:110px;gap:14px}
+.mosaic figure{overflow:hidden;border-radius:22px;position:relative}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.mosaic figure:hover img{transform:scale(1.07)}
+.mosaic .g1{grid-column:1/4;grid-row:1/5}
+.mosaic .g2{grid-column:4/7;grid-row:1/3;border-radius:22px 80px 22px 22px}
+.mosaic .g3{grid-column:4/6;grid-row:3/7}
+.mosaic .g4{grid-column:6/7;grid-row:3/7}
+.mosaic .g5{grid-column:1/3;grid-row:5/7}
+.mosaic .g6{grid-column:3/4;grid-row:5/7}
+@media(max-width:760px){.mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.mosaic figure{grid-column:auto!important;grid-row:auto!important}.mosaic .g1{grid-column:1/3!important;grid-row:span 2!important}.mosaic .g6{grid-column:1/3!important}}
+
+/* faq */
+.faq{background:var(--paper);border-top:1px solid var(--line);padding:clamp(4.5rem,8vw,7rem) 0}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.faq h2{margin:.8rem 0 1.6rem}
+.faq-img{border-radius:120px 12px 12px 12px;overflow:hidden;aspect-ratio:4/3.2;display:none}
+.faq-img img{width:100%;height:100%;object-fit:cover}
+details{border-bottom:1px solid var(--line);padding:1.2rem 0}
+details:first-of-type{border-top:2px solid var(--ink)}
+summary{list-style:none;display:flex;justify-content:space-between;gap:1.5rem;cursor:pointer;font-family:var(--serif);font-weight:700;font-size:1.25rem;letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;width:34px;height:34px;border-radius:50%;background:var(--sun);display:grid;place-items:center;font-family:var(--sans);font-size:1.3rem;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:.8rem;color:var(--muted);max-width:40rem}
+@media(min-width:901px){.faq-img{display:block}}
+@media(max-width:900px){.faq-grid{grid-template-columns:1fr}}
+
+/* contact */
+.contact{padding:clamp(4.5rem,8vw,7rem) 0;background:var(--sun-soft);position:relative}
+.contact-card{display:grid;grid-template-columns:.8fr 1.2fr;background:var(--paper);border-radius:34px;overflow:hidden;box-shadow:0 30px 70px rgba(14,51,25,.16);border:2px solid var(--ink)}
+.c-info{background:var(--forest);color:#fff;padding:clamp(2rem,4vw,3.2rem);display:flex;flex-direction:column;gap:1.6rem}
+.c-info h2{font-size:clamp(2rem,3.6vw,2.9rem)}
+.c-info h2 em{font-family:var(--script);font-weight:400;font-style:normal;color:var(--sun);font-size:1.2em;letter-spacing:0}
+.c-info p{color:rgba(255,255,255,.82)}
+.c-row{display:flex;gap:1rem;align-items:center}
+.c-row i{flex:none;width:46px;height:46px;border-radius:14px;background:var(--sun);display:grid;place-items:center}
+.c-row svg{width:22px;height:22px;fill:var(--deep)}
+.c-row small{display:block;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sun);font-weight:700}
+.c-row a,.c-row span{font-weight:600;word-break:break-word;font-size:.95rem}
+form{padding:clamp(2rem,4vw,3.2rem);display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+form .full{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:.85rem;margin-bottom:.4rem}
+input,textarea,select{width:100%;font:inherit;padding:.9rem 1rem;border-radius:12px;border:2px solid var(--line);background:var(--cream);color:var(--ink);transition:border .2s}
+input:focus,textarea:focus,select:focus{outline:0;border-color:var(--green);background:#fff}
+textarea{min-height:130px;resize:vertical}
+form .btn{justify-self:start}
+.ok{display:none;grid-column:1/-1;background:#E4F3E2;border-radius:12px;padding:.9rem 1rem;font-weight:600;color:var(--forest)}
+@media(max-width:900px){.contact-card{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--deep);color:rgba(255,255,255,.8);padding:4.5rem 0 0}
+.f-grid{display:grid;grid-template-columns:1.4fr .8fr 1.2fr;gap:3rem;padding-bottom:3rem}
+.f-logo{display:inline-block;background:#fff;border-radius:18px;padding:.6rem 1rem;margin-bottom:1.2rem}
+.f-logo img{height:76px;width:auto}
+footer h4{font-family:var(--serif);color:#fff;font-size:1.2rem;margin-bottom:1rem}
+footer ul{list-style:none;display:grid;gap:.6rem}
+footer ul a:hover{color:var(--sun)}
+.sub{display:flex;gap:.5rem;margin-top:.4rem}
+.sub input{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);color:#fff}
+.sub input::placeholder{color:rgba(255,255,255,.55)}
+.sub .btn{padding:.8rem 1.2rem;box-shadow:none}
+.social{display:flex;gap:.6rem;margin-top:1.3rem}
+.social a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.3);display:grid;place-items:center;transition:.2s}
+.social a:hover{background:var(--sun);border-color:var(--sun)}
+.social a:hover svg{fill:var(--deep)}
+.social svg{width:18px;height:18px;fill:#fff}
+.f-bar{border-top:1px solid rgba(255,255,255,.14);padding:1.3rem 0;font-size:.9rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.f-bar a{color:var(--sun);font-weight:600}
+.f-bar a:hover{text-decoration:underline}
+@media(max-width:860px){.f-grid{grid-template-columns:1fr;gap:2rem}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="rail" aria-hidden="true">
+  <span>Top</span><div class="track"></div><div class="dot" id="dot"></div><span>Bottom</span>
+</div>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top"><img src="images/logo.png" alt="Top to Bottom Cleaning Services logo" width="118" height="64"></a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-r">
+      <a class="tel" href="tel:+14379297497"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg><span>(437) 929-7497</span></a>
+      <a class="btn btn-green" href="#contact">Book Now</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Residential &amp; Commercial Cleaning</span>
+      <h1><em>Top to Bottom</em>Professional Cleaning Services</h1>
+      <p class="lead">For busy homeowners, property managers and corporate clients. Eco-friendly products, professional equipment and trained staff, so you come back to a clean, sanitised space.</p>
+      <div class="cta">
+        <a class="btn btn-sun" href="#contact">Book Now</a>
+        <a class="btn btn-line" href="#services">View Services</a>
+      </div>
+      <div class="proof">
+        <div><b>15</b><small>Years of experience</small></div>
+        <div><b>97%</b><small>Customer rating</small></div>
+      </div>
+    </div>
+    <div class="house">
+      <div class="back"></div>
+      <div class="window"><i></i><i></i><i></i><i></i></div>
+      <div class="front"><img src="images/kitchen.jpg" alt="A bright, freshly cleaned kitchen"></div>
+      <div class="sticker"><b>97%</b><small>Customer<br>rating</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="book">
+  <div class="wrap">
+    <div class="book-card">
+      <h3><small>Get started</small>What do you need cleaned?</h3>
+      <div class="chips" id="chips" role="group" aria-label="Service type">
+        <button class="chip on" type="button">Regular / Maintenance Cleaning</button>
+        <button class="chip" type="button">Deep Cleaning</button>
+        <button class="chip" type="button">Move-In / Move-Out Cleaning</button>
+        <button class="chip" type="button">Renovation Cleaning</button>
+      </div>
+      <a class="btn btn-green" href="#contact" id="bookgo">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="collage rv">
+      <div class="main"><img src="images/crew.jpg" alt="Cleaning crew giving a thumbs up"></div>
+      <span class="tag">15 years</span>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">About us</span>
+      <h2>Full service residential &amp; commercial cleaning</h2>
+      <p>A trusted partner for homes and offices, with customised cleaning plans built around your schedule, budget and requirements. Your comfort depends on us, and we treat every space that way.</p>
+      <ul class="ticks">
+        <li>Residential deep cleaning and recurring housekeeping</li>
+        <li>Commercial and office cleaning around business hours</li>
+        <li>Move-in and move-out cleaning</li>
+        <li>Post-construction and renovation cleanup</li>
+        <li>Eco-friendly cleaning with non-toxic products</li>
+      </ul>
+      <a class="btn btn-green" href="#contact">Request a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sv-head rv">
+      <div>
+        <span class="eyebrow">Services</span>
+        <h2 style="margin-top:.8rem">Every corner, from top to bottom</h2>
+      </div>
+      <p>Pick a service to see it. Transparent pricing with no hidden fees, and an instant quote based on the size of your space and your needs.</p>
+    </div>
+    <div class="sv-grid">
+      <ul class="sv-list" id="svlist">
+        <li><button class="sv-item on" data-img="0" data-cap="Residential, done right"><span class="n">01</span><span class="t">Residential Cleaning</span><span class="arr">&rarr;</span><span class="d">Residential deep cleaning and recurring housekeeping.</span></button></li>
+        <li><button class="sv-item" data-img="1" data-cap="Offices, around your hours"><span class="n">02</span><span class="t">Commercial Cleaning</span><span class="arr">&rarr;</span><span class="d">Commercial and office cleaning around business hours.</span></button></li>
+        <li><button class="sv-item" data-img="2" data-cap="Hand over the keys, clean"><span class="n">03</span><span class="t">Move-In / Move-Out</span><span class="arr">&rarr;</span><span class="d">Move-in and move-out cleaning.</span></button></li>
+        <li><button class="sv-item" data-img="3" data-cap="Dust gone, space ready"><span class="n">04</span><span class="t">Post-Construction</span><span class="arr">&rarr;</span><span class="d">Post-construction and renovation cleanup.</span></button></li>
+        <li><button class="sv-item" data-img="4" data-cap="Fresh from the floor up"><span class="n">05</span><span class="t">Carpet Cleaning</span><span class="arr">&rarr;</span></button></li>
+        <li><button class="sv-item" data-img="0" data-pos="top" data-cap="Streak-free views"><span class="n">06</span><span class="t">Window Cleaning</span><span class="arr">&rarr;</span></button></li>
+        <li><button class="sv-item" data-img="2" data-pos="bottom" data-cap="Bathrooms that sparkle"><span class="n">07</span><span class="t">Bathroom Cleaning</span><span class="arr">&rarr;</span></button></li>
+        <li><button class="sv-item" data-img="0" data-pos="bottom" data-cap="The heart of the home"><span class="n">08</span><span class="t">Kitchen Cleaning</span><span class="arr">&rarr;</span></button></li>
+        <li><button class="sv-item" data-img="5" data-cap="Outdoors included"><span class="n">09</span><span class="t">Outdoor Furniture</span><span class="arr">&rarr;</span></button></li>
+        <li><button class="sv-item" data-img="5" data-pos="top" data-cap="We take it away"><span class="n">10</span><span class="t">Trash Removal</span><span class="arr">&rarr;</span></button></li>
+        <li><button class="sv-item" data-img="1" data-pos="left" data-cap="Room to breathe"><span class="n">11</span><span class="t">Decluttering</span><span class="arr">&rarr;</span></button></li>
+        <li><button class="sv-item" data-img="6" data-cap="Fresh, folded, done"><span class="n">12</span><span class="t">Laundry</span><span class="arr">&rarr;</span></button></li>
+      </ul>
+      <div class="sv-view">
+        <div class="sv-frame" id="svframe">
+          <img class="on" src="images/kitchen.jpg" alt="Clean kitchen">
+          <img src="images/office.jpg" alt="Clean office" loading="lazy">
+          <img src="images/bathroom.jpg" alt="Clean spa bathroom" loading="lazy">
+          <img src="images/bathroom.jpg" alt="Clean finished interior" loading="lazy" style="object-position:right center">
+          <img src="images/carpet.jpg" alt="Vacuum on teal carpet" loading="lazy">
+          <img src="images/outdoor.jpg" alt="Lawn and outdoor space" loading="lazy">
+          <img src="images/laundry.jpg" alt="Industrial laundry machines" loading="lazy">
+        </div>
+        <p class="sv-cap" id="svcap">Residential, done right</p>
+        <div class="eco"><b>Eco-friendly</b><span>Non-toxic products on every clean.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h2 class="rv">Three steps to a clean space</h2>
+    <div class="steps">
+      <div class="step rv"><div class="num">1</div><h3>Schedule</h3><p>Book online or by phone.</p></div>
+      <div class="step rv"><div class="num">2</div><h3>We arrive</h3><p>The team shows up equipped to clean.</p></div>
+      <div class="step rv"><div class="num">3</div><h3>Enjoy</h3><p>Return to a clean, sanitised space.</p></div>
+    </div>
+    <div class="help rv">
+      <div><b>Save time</b><span>Let us handle the cleaning while you get on with your day.</span></div>
+      <div><b>Breathe easier</b><span>Eco-friendly products that are kind to your space.</span></div>
+      <div><b>Quality you can count on</b><span>Backed by a satisfaction guarantee.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="pr-head">
+      <div>
+        <span class="eyebrow">Pricing</span>
+        <h2 style="margin-top:.8rem">Climb a step when you need more</h2>
+      </div>
+      <p>Transparent pricing with no hidden fees. Each plan builds on the one before it.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stairs">
+      <div class="stair">
+        <span class="tier">Regular upkeep</span>
+        <div class="amt"><sup>$</sup>150</div><span class="from">Starting price</span>
+        <ul><li>Dusting</li><li>Vacuuming</li><li>Mopping</li><li>Basic kitchen wipe-down</li><li>Bathroom disinfecting</li></ul>
+        <a class="btn" href="#contact">Choose Plan</a>
+      </div>
+      <div class="stair alt">
+        <span class="tier">Deeper Cleaning</span>
+        <div class="amt"><sup>$</sup>250</div><span class="from">Starting price</span>
+        <ul><li>Everything in Regular upkeep</li><li>Baseboards</li><li>Cabinet exteriors</li><li>Interior windows</li><li>Appliance polishing</li></ul>
+        <a class="btn" href="#contact">Choose Plan</a>
+      </div>
+      <div class="stair alt">
+        <span class="tier">First-time clean</span>
+        <div class="amt"><sup>$</sup>300</div><span class="from">Starting price</span>
+        <ul><li>Everything in Deeper Cleaning</li><li>Inside oven and fridge</li><li>Light fixtures</li><li>Blinds</li><li>Grout</li><li>Trash removal</li></ul>
+        <a class="btn" href="#contact">Choose Plan</a>
+      </div>
+    </div>
+  </div>
+  <div class="pr-note">Free, no-obligation quotes based on home size, service type and frequency.</div>
+</section>
+
+<section class="exp">
+  <div class="wrap exp-grid">
+    <div class="big15 rv">15<small>years of experience</small></div>
+    <div class="rv">
+      <span class="eyebrow">Experience</span>
+      <h2 style="margin-top:.8rem">Long experience, efficient systems</h2>
+      <p>Our team's years in the trade and efficient systems mean every home and office gets the same careful clean, from the top of the room to the bottom.</p>
+      <div class="nums">
+        <div><b>15</b><span>Years of experience</span></div>
+        <div><b>97%</b><span>Customer rating</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gal">
+  <div class="wrap">
+    <div class="gal-head rv">
+      <div><span class="eyebrow">Gallery</span><h2 style="margin-top:.8rem">Spaces we clean</h2></div>
+    </div>
+    <div class="mosaic">
+      <figure class="g1"><img src="images/kitchen.jpg" alt="Clean kitchen" loading="lazy"></figure>
+      <figure class="g2"><img src="images/office.jpg" alt="Clean office" loading="lazy"></figure>
+      <figure class="g3"><img src="images/bathroom.jpg" alt="Clean bathroom" loading="lazy"></figure>
+      <figure class="g4"><img src="images/outdoor.jpg" alt="Outdoor lawn" loading="lazy"></figure>
+      <figure class="g5"><img src="images/laundry.jpg" alt="Laundry" loading="lazy"></figure>
+      <figure class="g6"><img src="images/carpet.jpg" alt="Carpet" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="rv">
+      <span class="eyebrow">FAQ</span>
+      <h2>Good questions, straight answers</h2>
+      <div class="faq-img"><img src="images/office.jpg" alt="Clean modern workspace" loading="lazy"></div>
+    </div>
+    <div class="rv">
+      <details open><summary>Are your staff background-checked, bonded and insured?</summary><p>Yes. All staff are background-checked, and the company is bonded and insured.</p></details>
+      <details><summary>Do I need to supply cleaning supplies?</summary><p>No. Our staff bring their own equipment and eco-friendly products. If you prefer specific products, just ask.</p></details>
+      <details><summary>What is the difference between a regular and a deep clean?</summary><p>A regular clean covers maintenance tasks. A deep clean is more intensive and is recommended for first-time clients.</p></details>
+      <details><summary>How is pricing determined?</summary><p>By home size (bedrooms and bathrooms), service type and frequency. Quotes are free and no-obligation.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="c-info">
+        <h2>Let's get your space <em>sparkling</em></h2>
+        <p>Request a free quote or book your first cleaning.</p>
+        <div class="c-row"><i><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></i><div><small>Phone</small><a href="tel:+14379297497">(437) 929-7497</a></div></div>
+        <div class="c-row"><i><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.5 7v.1L12 12.4 19.5 7.1V7L12 12.2z"/></svg></i><div><small>Email</small><a href="mailto:toptobottomcleaningservices20@gmail.com">toptobottomcleaningservices20@gmail.com</a></div></div>
+      </div>
+      <form id="form" novalidate>
+        <div><label for="fn">Name</label><input id="fn" name="name" autocomplete="given-name" required></div>
+        <div><label for="ln">Last Name</label><input id="ln" name="lastname" autocomplete="family-name"></div>
+        <div><label for="em">Email Address</label><input id="em" type="email" name="email" autocomplete="email" required></div>
+        <div><label for="ph">Phone No</label><input id="ph" type="tel" name="phone" autocomplete="tel"></div>
+        <div class="full"><label for="ms">Message</label><textarea id="ms" name="message"></textarea></div>
+        <button class="btn btn-green" type="submit">Submit</button>
+        <div class="ok" id="ok">Thank you. We will be in touch shortly.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="f-logo" href="#top"><img src="images/logo.png" alt="Top to Bottom Cleaning Services" width="140" height="76"></a>
+        <p>Top to Bottom Professional Cleaning Services. Residential and commercial cleaning with eco-friendly products and trained staff.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.7.3-1 1-1h2V2h-3c-3 0-4.5 1.8-4.5 4.4V8H7v3.5h2.5V22H14V11.5h2.8L17.3 8z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.2 4.7H5.4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0122 7.5v9a5.5 5.5 0 01-5.5 5.5h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2zm0 2A3.5 3.5 0 004 7.5v9A3.5 3.5 0 007.5 20h9a3.5 3.5 0 003.5-3.5v-9A3.5 3.5 0 0016.5 4zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.3-3.3a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 002.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 001.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 001.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Subscribe</h4>
+                <form class="sub" onsubmit="event.preventDefault();this.querySelector('input').value='';" style="display:flex;padding:0">
+          <input type="email" placeholder="Email" aria-label="Email">
+          <button class="btn btn-sun" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="f-bar">
+      <span>&copy; 2026 Top To Bottom Cleaning | All rights reserved</span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Are your staff background-checked, bonded and insured?","acceptedAnswer":{"@type":"Answer","text":"Yes. All staff are background-checked, and the company is bonded and insured."}},
+{"@type":"Question","name":"Do I need to supply cleaning supplies?","acceptedAnswer":{"@type":"Answer","text":"No. Our staff bring their own equipment and eco-friendly products. If you prefer specific products, just ask."}},
+{"@type":"Question","name":"What is the difference between a regular and a deep clean?","acceptedAnswer":{"@type":"Answer","text":"A regular clean covers maintenance tasks. A deep clean is more intensive and is recommended for first-time clients."}},
+{"@type":"Question","name":"How is pricing determined?","acceptedAnswer":{"@type":"Answer","text":"By home size (bedrooms and bathrooms), service type and frequency. Quotes are free and no-obligation."}}]}
+</script>
+
+<script>
+(function(){
+  var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return [].slice.call((c||document).querySelectorAll(s))};
+  var burger=$('#burger'),menu=$('#menu');
+  burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  $$('#menu a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open')})});
+
+  $$('#chips .chip').forEach(function(c){c.addEventListener('click',function(){
+    $$('#chips .chip').forEach(function(x){x.classList.remove('on')});c.classList.add('on');
+    var m=$('#ms');if(m&&!m.value){m.value='I would like a quote for: '+c.textContent+'.'}
+  })});
+
+  var imgs=$$('#svframe img'),cap=$('#svcap');
+  $$('.sv-item').forEach(function(b){
+    function show(){
+      $$('.sv-item').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+      imgs.forEach(function(i){i.classList.remove('on')});
+      var im=imgs[+b.dataset.img];im.classList.add('on');
+      var p={top:'center top',bottom:'center bottom',left:'left center'}[b.dataset.pos];
+      im.style.objectPosition=p||(+b.dataset.img===3?'right center':'center');
+      cap.textContent=b.dataset.cap;
+    }
+    b.addEventListener('mouseenter',show);b.addEventListener('focus',show);b.addEventListener('click',show);
+  });
+
+  $('#form').addEventListener('submit',function(e){e.preventDefault();$('#ok').style.display='block';this.reset()});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  $$('.rv').forEach(function(el){io.observe(el)});
+
+  var dot=$('#dot');
+  function prog(){
+    var h=document.documentElement.scrollHeight-innerHeight,p=h>0?scrollY/h:0;
+    var track=dot.parentNode.querySelector('.track').getBoundingClientRect().height-14;
+    dot.style.top=(56+p*track)+'px';
+  }
+  addEventListener('scroll',prog,{passive:true});prog();
+})();
+</script>
+</body>
+</html>
